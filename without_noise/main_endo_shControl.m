@@ -47,7 +47,7 @@ xlabel('Time [min]');ylabel('fractional activation');legend('mGEF','mGAP','mG*',
 % plot simulated and measured fold change for mG*, and calculate R2 and normalized RMSE 
 figure;hold on; set(gcf,'unit','centimeters','position',[1,1,22,18]);
 plot(TT,1/Y(1,3)*Y(:,3),'b');
-errorbar(t_arf1,mean(Y_arf1,2),std(Y_arf1,0,2)/sqrt(3), 'vertical','o','linewidth',1,'color','k','CapSize',10,'markersize',5,'markerfacecolor','k');
+errorbar(t_arf1,mean(Y_arf1,2),std(Y_arf1,0,2), 'vertical','o','linewidth',1,'color','k','CapSize',10,'markersize',5,'markerfacecolor','k');
 xlim([0 35]);ylim([1 3.5]);set(gca,'Xtick',0:5:35);
 xlabel('Time [min]');ylabel(['Arf1','$\cdot$','GTP','[fold change]'],'Interpreter','latex');box off;
 save('mg.eps');
@@ -59,7 +59,7 @@ disp(['(NRMSE, R2) for mG*=(',num2str(rmse/mean(reshape(Y_arf1,1,[]))),',',num2s
 % plot simulated and measured fold change for tG*, and calculate R2 and normalized RMSE 
 figure;hold on; set(gcf,'unit','centimeters','position',[1,1,22,18]);
 plot(TT,1/Y(1,5)*Y(:,5),'b');
-errorbar(t_tG,mean(Y_tG,2),std(Y_tG,0,2)/sqrt(8), 'vertical','o','linewidth',1,'color','k','CapSize',10,'markersize',5,'markerfacecolor','k');
+errorbar(t_tG,mean(Y_tG,2),std(Y_tG,0,2), 'vertical','o','linewidth',1,'color','k','CapSize',10,'markersize',5,'markerfacecolor','k');
 xlim([0 35]);ylim([0 35]);set(gca,'Xtick',0:5:35);
 xlabel('Time [min]');ylabel('tG* [fold change]');  
 save('tg.eps');savefig('tg.fig');
