@@ -7,5 +7,5 @@
 4. run main_mtG_sti_link to obtain the noise_mtG_sti_link_1000.mat. Multicores are required. 
 5. run main_mG_sti_spec  to obtain the noise_mG_sti_spec_1000.mat. Multicores are required. 
 6. run main_mtG_sti_spec to obtain the noise_mtG_sti_spec_1000.mat. Multicores are required. 
-7. finally, run main_plot_dose_response to plot Figures 6B-C, and 6G
+7. finally, run main_plot_dose_response to plot Figures 5B-C, and 5G
 
